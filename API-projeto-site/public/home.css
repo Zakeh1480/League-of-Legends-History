@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(9, 2, 27);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    display: block;
+    font-size: 30px;
+    color: white;
+    margin-top: 6%;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color: black;
+    height: 83px;
+}
+
+.caixa_cabecalho{
+    max-width: 1330px;
+    height: 83px;
+    margin: 0 auto;
+}
+
+.titulo{
+    float: left;
+    color: white;
+    font-size: 25px;
+    margin-top: 2vw;
+}
+
+.titulo_home{
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin-top: 2.4vw;
+    margin-right: 4%;
+    color: red;
+}
+
+.titulo_regiao{
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin-top: 2.4vw;
+}
+
+.list{
+    margin: 0 auto;
+}
+
+.img{
+    width: 18%;
+    height: 0vw;
+    margin: 0 auto;
+}
+
+#img_meio{
+    width: 4.1vw;
+    margin-left: 39%;
+    margin-top: 1vw;
+}
+
+.container_logo{
+    width: 100%;
+    height: 24vw;
+    text-align: center;
+}
+
+#img_logo{
+    width: 30%;
+    height: 200px;
+    margin-top: 3%;
+}
+
+.container_campeoes{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.filas{
+    margin-top: 10%;
+    display: flex;
+    margin-left: 4%;
+}
+
+.container_campeoes .filas{
+    
+    width: 16%;
+    height: 230px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container_campeoes .filas:hover{
+    z-index: 1;
+    transform: scale(1.25);
+}
+
+.content{
+    margin-top: 14.5vw;
+    margin-left: -7vw;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ajuste_grande{
+    margin-top: 14.5vw;
+    margin-left: -10vw;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ajuste_grande2{
+    margin-top: 14.5vw;
+    margin-left: -11vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ajuste_medio{
+    margin-top: 14.5vw;
+    margin-left: -9vw;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ajuste_pequeno{
+    margin-top: 14.5vw;
+    margin-left: -8vw;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#campeao{
+    width: 150px;
+    height: 230px;
+}
+
+.rodape{
+    width: 100%;
+    height: 83px;
+    background-color: black;
+    margin-top: 5vw;
+}
+
+.caixa_rodape{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 4.3vh;
+    color: white;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Site.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div id="container_login">
+        <div class="caixa_login">
+            <form method="POST" id="form_login" onsubmit="return entrar()">
+                <div class="mensagem_inicio">
+                    <p class="mensagem_inicio">Olá Lolzeiro</p>
+                </div>
+                <div class="email">
+                        <label>Email</label>
+                        <input id="inpt_email" type="email" name="Email" placeholder="Email" required>
+                </div>
+
+                <div class="senha">
+                        <label>Senha</label>
+                        <input id="inpt_senha" type="password" name="Senha" placeholder="Senha" required>
+                </div>
+
+                <div class="cadastro">
+                    <a id="cor_link" href="Cadastro.html">Cadastre-se</a>
+                </div>
+
+                <div class="btn_login">
+                    <button id="btn_entrar" type="submit">Entrar</button>
+                </div>
+            </form>
+            <div id="div_erro">
+                <img id="img_aguarde" src="" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'Home.html';
+                });
+
+            } else {
+
+                alert("Email ou Senha Invalidos")
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>

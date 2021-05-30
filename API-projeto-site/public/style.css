@@ -1,0 +1,144 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-image: url('https://images.wallpapersden.com/image/download/sett-league-of-legends_a21nZmqUmZqaraWkpJRmaGtrrWxrbQ.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container_login{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.caixa_login{
+    width: 25%;
+    height: 37vh;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    box-shadow: white 3px 0px 8px -2px;
+}
+
+#container_cadastro{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.caixa_cadastro{
+
+    width: 25%;
+    height: 41vh;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    box-shadow: white 3px 0px 8px -2px;
+}
+
+.mensagem_inicio{
+    font-size: 22px;
+    color: white;
+    margin-top: 4vh;
+}
+.email{
+    margin-top: 4vh;
+}
+
+.senha{
+    margin-top: 5vh;
+}
+
+.email2{
+    margin-top: 4vh;
+}
+
+.senha2{
+    margin-top: 5vh;
+}
+
+.senha3{
+    margin-top: 5vh;
+}
+
+.btn_login{
+    margin-top: 5vh;
+    margin-left: 3vh;
+}
+
+.btn_cadastro{
+    margin-top: 6vh;
+    margin-left: 3vh;
+}
+
+#btn_entrar{
+    width: 12vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(129, 125, 61);
+    color: white;
+    transition: 0.5s;
+    height: 30px;
+    margin-top: -1vw;
+    font-size: 15px;
+}
+#btn_entrar:hover{
+
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+.cadastro{
+    margin-top: 19px;
+    margin-left: 7%;
+}
+
+#cor_link{
+    color: black;
+    font-size: 15px;
+}
+
+#btn_cadastrar{
+    width: 12vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(129, 125, 61);
+    color: white;
+    transition: 0.5s;
+    height: 30px;
+    margin-top: -1vw;
+    font-size: 15px;
+}
+#btn_cadastrar:hover{
+
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+#inpt_email{
+    width: 62%;
+    background-color: rgba(148, 172, 172, 0.486);
+    border: 1px solid rgba(148, 172, 172, 0.486);
+    text-align: center;
+}
+
+#inpt_senha{
+    width: 62%;
+    background-color: rgba(148, 172, 172, 0.486);
+    border: 1px solid rgba(148, 172, 172, 0.486);
+    text-align: center;
+}
+
+#inpt_re_senha{
+    width: 55%;
+    background-color: rgba(148, 172, 172, 0.486);
+    border: 1px solid rgba(148, 172, 172, 0.486);
+    text-align: center;
+}

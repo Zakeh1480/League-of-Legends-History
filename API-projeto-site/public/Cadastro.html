@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Site.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div id="container_cadastro">
+        <div class="caixa_cadastro">
+            <form method="POST" onsubmit="return cadastrar()" id="form_cadastro">
+                <div class="mensagem_inicio">
+                    <p class="mensagem_inicio">Cadastre-se</p>
+                </div>
+                <div class="email2">
+                    <label>Email</label>
+                    <input id="inpt_email" name="Email" type="email" placeholder="Email" required>
+                </div>
+
+                <div class="senha2">
+                    <label>Senha</label>
+                    <input id="inpt_senha" name="Senha" type="password" placeholder="*****" required>
+                </div>
+
+                <div class="senha3">
+                    <label>Re-Senha</label>
+                    <input id="inpt_re_senha" name="Re_Senha" type="password" placeholder="*****" required>
+                </div>
+
+                <div class="btn_cadastro">
+                    <button id="btn_cadastrar" type="submit"  onclick="cadastro()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'Index.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>
