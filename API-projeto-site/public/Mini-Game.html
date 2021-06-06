@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/game.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Site.js"></script>
+    <script data-jsd-embedded data-key="fe0aeab9-f39b-4bbf-9ad4-ce5c1fc096d2"
+        data-base-url="https://jsd-widget.atlassian.com"
+        src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+    <title>Mini-Game</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"
+        integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
+
+    <div class="cabecalho_home_mod">
+        <div class="caixa_cabecalho_home">
+            <p class="titulo">History Legend</p>
+            <nav>
+                <ul class="list">
+                    <a href="Index.html"><img class="saida"
+                            src="Imagens/seta-small-direita-branca-300x258.png"></a>
+                    <li class="titulo_regiao"><a href="regioes.html">Região</a></li>
+                    <li class="titulo_game">Game</a></li>
+                    <li class="titulo_home"><a href="Home.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="img">
+                <a href="Home.html"><img id="img_meio"
+                        src="Imagens/league-of-legends-desktop-icon-14.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="caixa_titulo_gane">
+        <h1 id="titulo_game">Mini-Game</h1>
+    </div>
+
+    <div class="container_game">
+
+        <div class="caixa_campeao">
+            <img
+                src="Imagens/yasuo.webp">
+            <br>
+            <select id="select1">
+                <option value="#">Opções</option>
+                <option value="Yasuo">Yasuo</option>
+                <option value="Malzahar">Malzahar</option>
+                <option value="Garen">Garen</option>
+                <option value="Azir">Azir</option>
+            </select>
+        </div>
+
+        <div class="caixa_campeao">
+            <img
+                src="Imagens/malzahar.webp">
+            <br>
+            <select id="select2">
+                <option value="#">Opções</option>
+                <option value="Yasuo">Yasuo</option>
+                <option value="Malzahar">Malzahar</option>
+                <option value="Garen">Garen</option>
+                <option value="Azir">Azir</option>
+            </select>
+        </div>
+
+        <div class="caixa_campeao">
+            <img
+                src="Imagens/garen.webp">
+            <br>
+            <select id="select3">
+                <option value="#">Opções</option>
+                <option value="Yasuo">Yasuo</option>
+                <option value="Malzahar">Malzahar</option>
+                <option value="Garen">Garen</option>
+                <option value="Azir">Azir</option>
+            </select>
+        </div>
+
+        <div class="caixa_campeao">
+            <img src="Imagens/azir.jpg">
+            <br>
+            <select id="select4">
+                <option value="#">Opções</option>
+                <option value="Yasuo">Yasuo</option>
+                <option value="Malzahar">Malzahar</option>
+                <option value="Garen">Garen</option>
+                <option value="Azir">Azir</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="caixa_botao">
+        <button onclick="resultado()" id="btn_verificar">Verificar</button>
+        <button onclick="historico()" id="btn_historico">Histórico</button>
+    </div><br><br>
+
+    <div id="msg"></div>
+
+    <div class="titulo_ranking">
+        <h2>Ranking</h2>
+        <h2>Histórias Mais Lidas</h2>
+    </div>
+
+    <div class="chart_style"><canvas class="pie-chart"></canvas></div>
+
+    <div class="rodape_game">
+        <div class="caixa_rodape">
+            <h4>Desenvolvido por Isaque Cruz dos Santos. &copy BandTec 2021.</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    var ctx = document.getElementsByClassName("pie-chart");
+
+    var chartGraph = new Chart(ctx, {
+
+        type: 'pie',
+        data: {
+            labels: ["1° Yasuo", "2° Malzahar", "3º Zed", "4º Veigar"],
+            datasets: [{
+                label: "Rank Histórias Mais Lidas",
+                data: ['52', '36', '25', '11'],
+                borderWidth: 3,
+                borderColor: 'Black',
+                backgroundColor: ['Red', 'Blue', 'Yellow', 'Green'],
+            }]
+        }
+
+    });
+
+</script>

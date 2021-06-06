@@ -2,9 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     border: 0px;
-    background-image: url('https://images.wallpapersden.com/image/download/sett-league-of-legends_a21nZmqUmZqaraWkpJRmaGtrrWxrbQ.jpg');
-    background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #container_login{

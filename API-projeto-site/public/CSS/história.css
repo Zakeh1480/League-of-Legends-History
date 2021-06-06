@@ -2,7 +2,7 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
@@ -74,6 +74,12 @@ a{
      padding-top: 1.5%;
 }
 
+#meio_mod{
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    padding-top: 2%;
+}
+
 #nick{
     color: white;
     font-size: 1.2em;
@@ -92,5 +98,29 @@ a{
     width: 8%;
     margin-top: -1.3vw;
     font-size: 1.2em;
+}
+
+.back_mod{
+    width: 8%;
+    margin-top: -2.8vw;
+    font-size: 1.2em;
+}
+
+.mod_historia_champ_regiao{
+    display: block;
+    font-size: 20px;
+    color: white;
+    margin-top: 11%;
+}
+
+.campeoes_cidades{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.text_camp_regiao{
+    font-size: 20px;
+    color: white;
 }
 

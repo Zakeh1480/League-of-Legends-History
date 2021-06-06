@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titulo_regiao{
+    color: red;
+}
+
+.container_regiao{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.caixa_regioes{
+    margin-top: 10%;
+    display: flex;
+    margin-left: 4%;
+}
+
+.container_regiao .caixa_regioes{
+    width: 28%;
+    height: 230px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container_regiao .caixa_regioes:hover{
+    z-index: 1;
+    transform: scale(1.25);
+}
+
+.nome_regiao{
+    margin-top: 14vw;
+    margin-left: -17vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nome_regiao_grande{
+    margin-top: 14vw;
+    margin-left: -24vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nome_regiao_medio{
+    margin-top: 14vw;
+    margin-left: -20vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nome_regiao_band{
+    margin-top: 14vw;
+    margin-left: -21vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nome_regiao_19{
+    margin-top: 14vw;
+    margin-left: -19vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nome_regiao_17{
+    margin-top: 14vw;
+    margin-left: -17.6vw;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#regiao1{
+    width: 30vw;
+}
+
+#regiao2{
+    width: 30vw;
+    height: 16vw;
+}

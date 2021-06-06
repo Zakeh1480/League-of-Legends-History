@@ -25,16 +25,23 @@ span{
     margin-top: 6%;
 }
 
-.cabecalho{
+.cabecalho_home{
     width: 100%;
     background-color: black;
     height: 83px;
 }
 
-.caixa_cabecalho{
+.caixa_cabecalho_home{
     max-width: 1330px;
     height: 83px;
     margin: 0 auto;
+}
+
+.saida{
+    float: inline-end;
+    width: 2%;
+    margin-top: 4%;
+    margin-left: 3.9%;
 }
 
 .titulo{
@@ -60,8 +67,18 @@ span{
     margin-top: 2.4vw;
 }
 
+.titulo_game{
+    margin-right: 3.9%;
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin-top: 2.4vw;
+    color: red;
+}
+
 .list{
     margin: 0 auto;
+    margin-left: 35%;
 }
 
 .img{

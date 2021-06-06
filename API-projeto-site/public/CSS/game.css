@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cabecalho_home_mod{
+    width: 101%;
+    background-color: black;
+    height: 83px;
+    margin: -1%;
+}
+
+.caixa_titulo_gane{
+    text-align: center;
+    margin-top: 3%;
+}
+
+#titulo_game{
+    color: white;
+}
+
+.container_game{
+    width: 100%;
+    height: 27.3vw;
+    margin-top: 5%;
+    display: flex;
+}
+
+.container_game img{
+    width: 120px;
+}
+
+.caixa_campeao{
+    margin: 0 auto;
+}
+
+.caixa_botao{
+    width: 10.1%;
+    margin-left: 45%;
+    margin-top: -5%;
+    display: flex;
+}
+
+#select1{
+    margin-left: 14%;
+}
+
+#select2{
+    margin-left: 14%;
+}
+
+#select3{
+    margin-left: 14%;
+}
+
+#select4{
+    margin-left: 14%;
+}
+
+#btn_verificar{
+    width: 5vw;
+    height: 1.6vw;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#btn_verificar:hover{
+    width: 5vw;
+    height: 1.6vw;
+    border-radius: 10px;
+    background-color: rgb(16, 50, 58);
+    color: white;
+    transition: 0.4s;
+}
+
+#btn_historico{
+    margin-left: 15%;
+    width: 5vw;
+    height: 1.6vw;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#btn_historico:hover{
+    width: 5vw;
+    height: 1.6vw;
+    border-radius: 10px;
+    background-color: rgb(16, 50, 58);
+    color: white;
+    transition: 0.4s;
+}
+
+#msg{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.chart_style {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.titulo_ranking{
+    text-align: center;
+    margin-top: 16.6%;
+}
+
+.titulo_ranking h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+
+.rodape_game{
+    width: 100%;
+    height: 83px;
+    background-color: black;
+    margin-top: 7vw;
+}
