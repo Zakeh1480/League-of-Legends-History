@@ -2,7 +2,7 @@ create database Projeto_Individual;
 
 use Projeto_Individual;
 
-create table User(
+create table Usuario(
 
 	idUser int primary key auto_increment,
     Email varchar(30),
@@ -12,5 +12,3 @@ create table User(
 )auto_increment = 1;
 
 select * from Usuario;
-
-drop table Usuario;
